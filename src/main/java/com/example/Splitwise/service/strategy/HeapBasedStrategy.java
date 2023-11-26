@@ -82,7 +82,7 @@ public class HeapBasedStrategy implements SettleUpStrategy{
                 minHeap.add(maxHasToPay);
             }else if(remainingBalance > 0){
                 maxWillGetPaid.setValue(remainingBalance);
-                minHeap.add(maxWillGetPaid);
+                maxHeap.add(maxWillGetPaid);
             }
         }
 
